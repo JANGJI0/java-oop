@@ -15,15 +15,23 @@ public class EnumWeekExample {
 		case 2:
 			today = Week.MONDAY; break; // 열거 상수 대입
 		case 3:
-			today = Week.THURSDAY; break; // 열거 상수 대입
+			today = Week.TUESDAY; break; // 열거 상수 대입
 		case 4:
-			today = Week.SUNDAY; break; // 열거 상수 대입
+			today = Week.WEDNESDAY; break; // 열거 상수 대입
 		case 5:
-			today = Week.SUNDAY; break; // 열거 상수 대입
+			today = Week.THURSDAY; break; // 열거 상수 대입
 		case 6:
-			today = Week.SUNDAY; break; // 열거 상수 대입
+			today = Week.FRIDAY; break; // 열거 상수 대입
 		case 7:
-			today = Week.SUNDAY; break; // 열거 상수 대입
+			today = Week.SATURDAY; break; // 열거 상수 대입
+		}
+		
+		System.out.println("오늘 요일: " + today);
+		
+		if(today == Week.SUNDAY) {
+			System.out.println("일요일에는 축구를 합니다.");
+		} else {
+			System.out.println("열심히 자바 공부합니다.");;
 		}
 		
 	}
